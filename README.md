@@ -1,17 +1,18 @@
 # Command Line Blackjack Game
 
-A feature-rich command-line implementation of Blackjack written in Node.js, complete with ASCII card representations, card counting, and multi-deck support.
+A fully-featured **command-line Blackjack** game built with Node.js, featuring ASCII card graphics, multi-deck support, a betting system, and Hi-Lo card counting. Designed for interactive play with realistic dealer logic and automatic deck reshuffling.
 
 ## Features
 
-- 🎴 ASCII art card visualization
+- 🎴 ASCII art card visualization for all suits and values
 - 🎲 Configurable shoe size (number of decks)
-- 💰 Betting system with minimum bet requirements
-- 🔢 Card counting functionality
-- 🎮 Interactive gameplay with hit/stand options
-- 💵 Balance tracking and payouts
-- ♠️ Full deck of cards with all suits and values
-- 🔄 Automatic deck reshuffling when running low
+- 💰 Betting system with minimum bet enforcement
+- 🔢 Hi-Lo card counting system (running count displayed)
+- 🎮 Interactive hit/stand gameplay
+- 💵 Balance tracking and automated payouts
+- ♠️ Standard casino rules implemented (dealer hits 16, stands on 17)
+- 🔄 Automatic deck reshuffling when cards run low
+- 🧩 Modular, object-oriented code for easy extension and maintenance
 
 ## Prerequisites
 
@@ -22,11 +23,7 @@ A feature-rich command-line implementation of Blackjack written in Node.js, comp
 
 1. Clone this repository or download the source code.
 2. Navigate to the project directory.
-3. Install dependencies:
-    ```bash
-    npm install
-    ```
-4. Run the game:
+3. Run the game:
     ```bash
     node blackjack.js
     ```

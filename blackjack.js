@@ -26,7 +26,7 @@ const asciiCards = {
          │   ♥️   │
          └───────┘
          `,
-     '3': `
+    '3': `
          ┌───────┐
          │   ♥️   │
          │   3   │
@@ -40,7 +40,7 @@ const asciiCards = {
          │   ♥️   │
          └───────┘
          `,
-      '5': `
+    '5': `
          ┌───────┐
          │   ♥️   │
          │   5   │
@@ -54,7 +54,7 @@ const asciiCards = {
          │   ♥️   │
          └───────┘
          `,
-      '7': `
+    '7': `
          ┌───────┐
          │   ♥️   │
          │   7   │
@@ -68,7 +68,7 @@ const asciiCards = {
          │   ♥️   │
          └───────┘
          `,
-      '9': `
+    '9': `
          ┌───────┐
          │   ♥️   │
          │   9   │
@@ -82,7 +82,7 @@ const asciiCards = {
          │   ♥️   │
          └───────┘
          `,
-      'J': `
+    'J': `
          ┌───────┐
          │   ♥️   │
          │   J   │
@@ -119,7 +119,7 @@ const asciiCards = {
          │   ♦️   │
          └───────┘
          `,
-      '3': `
+    '3': `
          ┌───────┐
          │   ♦️   │
          │   3   │
@@ -133,7 +133,7 @@ const asciiCards = {
          │   ♦️   │
          └───────┘
          `,
-      '5': `
+    '5': `
          ┌───────┐
          │   ♦️   │
          │   5   │
@@ -147,7 +147,7 @@ const asciiCards = {
          │   ♦️   │
          └───────┘
          `,
-      '7': `
+    '7': `
          ┌───────┐
          │   ♦️   │
          │   7   │
@@ -161,7 +161,7 @@ const asciiCards = {
          │   ♦️   │
          └───────┘
          `,
-      '9': `
+    '9': `
          ┌───────┐
          │   ♦️   │
          │   9   │
@@ -175,7 +175,7 @@ const asciiCards = {
          │   ♦️   │
          └───────┘
          `,
-      'J': `
+    'J': `
          ┌───────┐
          │   ♦️   │
          │   J   │
@@ -212,7 +212,7 @@ const asciiCards = {
          │   ♣️   │
          └───────┘
          `,
-         '3': `
+    '3': `
          ┌───────┐
          │   ♣️   │
          │   3   │
@@ -226,7 +226,7 @@ const asciiCards = {
          │   ♣️   │
          └───────┘
          `,
-         '5': `
+    '5': `
          ┌───────┐
          │   ♣️   │
          │   5   │
@@ -240,7 +240,7 @@ const asciiCards = {
          │   ♣️   │
          └───────┘
          `,
-      '7': `
+    '7': `
          ┌───────┐
          │   ♣️   │
          │   7   │
@@ -254,7 +254,7 @@ const asciiCards = {
          │   ♣️   │
          └───────┘
          `,
-      '9': `
+    '9': `
          ┌───────┐
          │   ♣️   │
          │   9   │
@@ -268,7 +268,7 @@ const asciiCards = {
          │   ♣️   │
          └───────┘
          `,
-      'J': `
+    'J': `
          ┌───────┐
          │   ♣️   │
          │   J   │
@@ -305,7 +305,7 @@ const asciiCards = {
          │   ♠️   │
          └───────┘
          `,
-      '3': `
+    '3': `
          ┌───────┐
          │   ♠️   │
          │   3   │
@@ -319,7 +319,7 @@ const asciiCards = {
          │   ♠️   │
          └───────┘
          `,
-      '5': `
+    '5': `
          ┌───────┐
          │   ♠️   │
          │   5   │
@@ -333,7 +333,7 @@ const asciiCards = {
          │   ♠️   │
          └───────┘
          `,
-      '7': `
+    '7': `
          ┌───────┐
          │   ♠️   │
          │   7   │
@@ -347,7 +347,7 @@ const asciiCards = {
          │   ♠️   │
          └───────┘
          `,
-      '9': `
+    '9': `
          ┌───────┐
          │   ♠️   │
          │   9   │
@@ -361,7 +361,7 @@ const asciiCards = {
          │   ♠️   │
          └───────┘
          `,
-      'J': `
+    'J': `
          ┌───────┐
          │   ♠️   │
          │   J   │
@@ -412,26 +412,26 @@ function shuffleDeck(deck) {
 }
 // Function to update count based on card value
 function updateCount(card) {
-    switch (card.value) {
-      case '2':
-      case '3':
-      case '4':
-      case '5':
-      case '6':
-        count++;
-        break;
-      case '10':
-      case 'J':
-      case 'Q':
-      case 'K':
-      case 'A':
-        count--;
-        break;
-      default:
-        // For 7, 8, 9 - do nothing (count remains unchanged)
-        break;
-    }
+  switch (card.value) {
+    case '2':
+    case '3':
+    case '4':
+    case '5':
+    case '6':
+      count++;
+      break;
+    case '10':
+    case 'J':
+    case 'Q':
+    case 'K':
+    case 'A':
+      count--;
+      break;
+    default:
+      // For 7, 8, 9 - do nothing (count remains unchanged)
+      break;
   }
+}
 
 // Function to calculate the value of a hand
 function calculateHandValue(hand) {
@@ -476,59 +476,59 @@ const rl = readline.createInterface({
 
 // Function to start a new round
 function startNewRound() {
-    if (deck.length < 10) {
-      deck = generateDeck(shoeSize);
-      shuffleDeck(deck);
-      count = 0;
-      console.log("\n");
-      console.log('Deck shuffled.');
-      console.log("\n");
+  if (deck.length < 10) {
+    deck = generateDeck(shoeSize);
+    shuffleDeck(deck);
+    count = 0;
+    console.log("\n");
+    console.log('Deck shuffled.');
+    console.log("\n");
+  }
+  playerHand = [];
+  dealerHand = [];
+  isGameEnd = false;
+
+  console.log(`bet minimum: $${minBet}\n`);
+  rl.question(`Current balance: $${balance}\n\n\nEnter your bet amount: `, (betInput) => {
+    betAmount = parseInt(betInput);
+    if (isNaN(betAmount) || betAmount > balance || betAmount < minBet) {
+      console.log('Invalid bet amount. Using minimum bet.');
+      startRoundWithMinBet(minBet);
+      isMinBet = true;
+    } else {
+      startRoundWithBet(betAmount);
     }
-    playerHand = [];
-    dealerHand = [];
-    isGameEnd = false;
-  
-    console.log(`bet minimum: $${minBet}\n`);
-    rl.question(`Current balance: $${balance}\n\n\nEnter your bet amount: `, (betInput) => {
-      betAmount = parseInt(betInput);
-      if (isNaN(betAmount) || betAmount > balance || betAmount < minBet) {
-        console.log('Invalid bet amount. Using minimum bet.');
-        startRoundWithMinBet(minBet);
-        isMinBet = true;
-      } else {
-        startRoundWithBet(betAmount);
-      }
-    });
-  }
-  // Helper function to start the round with the specified bet
+  });
+}
+// Helper function to start the round with the specified bet
 function startRoundWithBet(betAmount) {
-    betAmount = betAmount;
-    balance -= betAmount; // Deduct the bet amount from the balance
-    dealCards();
-  }
+  betAmount = betAmount;
+  balance -= betAmount; // Deduct the bet amount from the balance
+  dealCards();
+}
 function startRoundWithMinBet(minBet) {
-    minBet = minBet;
-    balance -= minBet; // Deduct the bet amount from the balance
-    dealCards();
-  }
+  minBet = minBet;
+  balance -= minBet; // Deduct the bet amount from the balance
+  dealCards();
+}
 
 // Function to deal cards at the beginning of a round
 function dealCards() {
-    playerHand.push(deck.pop());
-    updateCount(playerHand[playerHand.length - 1]); // Update count for player's card
-    dealerHand.push(deck.pop());
-    updateCount(dealerHand[dealerHand.length - 1]); // Update count for dealer's card
-    playerHand.push(deck.pop());
-    updateCount(playerHand[playerHand.length - 1]); // Update count for player's card
-    dealerHand.push(deck.pop());
-    updateCount(dealerHand[dealerHand.length - 1]); // Update count for dealer's card
-  
-    // Display the running count
-    console.log("\n");
+  playerHand.push(deck.pop());
+  updateCount(playerHand[playerHand.length - 1]); // Update count for player's card
+  dealerHand.push(deck.pop());
+  updateCount(dealerHand[dealerHand.length - 1]); // Update count for dealer's card
+  playerHand.push(deck.pop());
+  updateCount(playerHand[playerHand.length - 1]); // Update count for player's card
+  dealerHand.push(deck.pop());
+  updateCount(dealerHand[dealerHand.length - 1]); // Update count for dealer's card
 
-  
-    displayGameStatus();
-  }
+  // Display the running count
+  console.log("\n");
+
+
+  displayGameStatus();
+}
 
 
 function displayGameStatus() {
@@ -555,7 +555,7 @@ function displayGameStatus() {
       }
       return asciiCards[card.suit][card.value].split('\n');
     });
-  
+
     const dealerHandHeight = dealerCards[0].length;
     for (let i = 0; i < dealerHandHeight; i++) {
       console.log(dealerCards.map((card) => card[i]).join('\t'));
@@ -569,7 +569,7 @@ function displayGameStatus() {
       console.log(dealerCards.map((card) => card[i]).join('\t'));
     }
     console.log("\n");
-  
+
     console.log(`Dealer hand value: ${calculateHandValue(dealerHand)}`);
     console.log("\n");
     determineWinner();
@@ -607,7 +607,7 @@ function displayGameStatus() {
 function dealerPlay() {
   while (calculateHandValue(dealerHand) < 17) {
     dealerHand.push(deck.pop());
-    
+
   }
 
   isGameEnd = true;
@@ -618,44 +618,44 @@ function dealerPlay() {
 function determineWinner() {
   const playerValue = calculateHandValue(playerHand);
   const dealerValue = calculateHandValue(dealerHand);
-  if(!isMinBet){
-  if (playerValue === 21) {
-    console.log('BLACKJACK!!! 2:1 PAYOUT\n')
-    balance += (2 * betAmount);
-  } else if (playerValue > 21) {
-    console.log('Player busted. Dealer wins.');
-  } else if (dealerValue > 21) {
-    console.log('Dealer busted. Player wins.');
-    balance += (2 * betAmount) ;
-  } else if (playerValue === dealerValue) {
-    console.log('It\'s a push (tie).');
-    balance += betAmount;
-  } else if (playerValue > dealerValue) {
-    console.log('Player wins.');
-    balance += (2 * betAmount) ;
+  if (!isMinBet) {
+    if (playerValue === 21) {
+      console.log('BLACKJACK!!! 200:1 PAYOUT\n')
+      balance += (200 * betAmount);
+    } else if (playerValue > 21) {
+      console.log('Player busted. Dealer wins.');
+    } else if (dealerValue > 21) {
+      console.log('Dealer busted. Player wins.');
+      balance += (2 * betAmount);
+    } else if (playerValue === dealerValue) {
+      console.log('It\'s a push (tie).');
+      balance += betAmount;
+    } else if (playerValue > dealerValue) {
+      console.log('Player wins.');
+      balance += (2 * betAmount);
+    } else {
+      console.log('Dealer wins.');
+    }
   } else {
-    console.log('Dealer wins.');
-  }
-} else {
-  if (playerValue === 21) {
-    console.log('BLACKJACK!!! 200:1 PAYOUT\n')
-    balance += (200 * minBet);
-  } else if (playerValue > 21) {
-    console.log('Player busted. Dealer wins.');
-  } else if (dealerValue > 21) {
-    console.log('Dealer busted. Player wins.');
-    balance += (2 * minBet) ;
-  } else if (playerValue === dealerValue) {
-    console.log('It\'s a push (tie).');
-    balance += minBet;
-  } else if (playerValue > dealerValue) {
-    console.log('Player wins.');
-    balance += (2 * minBet) ;
-  } else {
-    console.log('Dealer wins.');
-  }
+    if (playerValue === 21) {
+      console.log('BLACKJACK!!! 200:1 PAYOUT\n')
+      balance += (200 * minBet);
+    } else if (playerValue > 21) {
+      console.log('Player busted. Dealer wins.');
+    } else if (dealerValue > 21) {
+      console.log('Dealer busted. Player wins.');
+      balance += (2 * minBet);
+    } else if (playerValue === dealerValue) {
+      console.log('It\'s a push (tie).');
+      balance += minBet;
+    } else if (playerValue > dealerValue) {
+      console.log('Player wins.');
+      balance += (2 * minBet);
+    } else {
+      console.log('Dealer wins.');
+    }
 
-}
+  }
 
   console.log(`New balance: $${balance}`);
   console.log(`Count: ${count}`);
@@ -668,6 +668,7 @@ function determineWinner() {
       rl.close();
     } else {
       console.log('Invalid.');
+      startNewRound();
     }
   });
 }
